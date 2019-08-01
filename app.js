@@ -115,17 +115,17 @@ btnbox.forEach(x => {
     x.parentElement.children[1].classList.remove("hidden");
     x.parentElement.children[1].classList.add("show");
 
-    btnbox[(btnsArr.indexOf(x) + 2) % 3].nextElementSibling.classList.remove(
-      "show"
-    );
-    btnbox[(btnsArr.indexOf(x) + 1) % 3].nextElementSibling.classList.remove(
-      "show"
-    );
-    btnbox[(btnsArr.indexOf(x) + 2) % 3].nextElementSibling.classList.add(
-      "hidden"
-    );
-    btnbox[(btnsArr.indexOf(x) + 1) % 3].nextElementSibling.classList.add(
-      "hidden"
-    );
+    btnbox[
+      (btnsArr.indexOf(x) + 2) % btnsArr.length
+    ].nextElementSibling.classList.remove("show");
+    btnbox[
+      (btnsArr.indexOf(x) + 1) % btnsArr.length
+    ].nextElementSibling.classList.remove("show");
+    btnbox[
+      (btnsArr.indexOf(x) + 2) % btnsArr.length
+    ].nextElementSibling.classList.add("hidden");
+    btnbox[
+      (btnsArr.indexOf(x) + 1) % btnsArr.length
+    ].nextElementSibling.classList.add("hidden");
   };
 });

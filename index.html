@@ -13,8 +13,14 @@
 </head>
 
 <body>
+
     <section class="container">
-        <div class="box">
+        <div id="photobox"
+            style="height: 100vh; width: 100vw;">
+        </div>
+        <div class="box"
+            style="height: 100vh; width: 100vw; display: none">
+
             <img class="arrow"
                 id="left"
                 src="next.svg"
@@ -24,10 +30,65 @@
                 src="next.svg"
                 alt="">
         </div>
-        <div id="imgs"
-            style="height: 100vh; width: 100vw;">
-        </div>
     </section>
+    <div>
+        <div class="tab"
+            id="btnbox">
+            <div>
+                <button class="tablinks">history</button>
+                <p class="hidden">this is something</p>
+            </div>
+            <div>
+                <button class="tablinks">match</button>
+                <p class="hidden">this is second</p>
+            </div>
+            <div> <button class="tablinks">info</button>
+                <p class="hidden">this is the third</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p id="historytext">
+
+                The Belgian national football team[C] has officially represented Belgium in international football since
+                their maiden match in 1904. The squad is under the global jurisdiction of FIFA and is governed in Europe
+                by
+                UEFA—both of which were co-founded by the Belgian team's supervising body, the Royal Belgian Football
+                Association (RBFA).
+                Periods of regular Belgian representation at the highest international level, from 1920 to 1938, from
+                1982
+                to
+                2002 and again from 2014 onwards, have alternated with mostly unsuccessful qualification rounds.Most of
+                Belgium's home matches are played at the King Baudouin Stadium in Brussels.
+            </p>
+            <p id="contacttext">
+                With qualification to the knockout stage already assured, two second-string sides laboured in a low-key
+                encounter where three points to seal top spot - and a seemingly tougher route through the tournament -
+                appeared a dubious prize
+            </p>
+            <p id="infotext">or your chance to win a pair of tickets, all you have to do is select the game of your
+                choice
+                from the list below and complete the entry form.</p>
+        </div>
+
+
+
+    </div>
+    <div>
+        <h2>ticket</h2>
+        <p id="number1">0</p>
+        <p id="number2">200</p>
+        <p id="number3">
+            <span id="days"></span>
+            days
+            <span id="hours"></span>
+            :
+            <span id="minutes"></span>
+            :
+            <span id="seconds"></span>
+        </p>
+
+    </div>
 
 
     <script src="app.js"></script>
